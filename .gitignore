@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+
+# Build output (electron-builder typically outputs here)
+dist/
+release/
+
+# Electron specific cache/build files
+.cache/
+*.o
+*.obj
+*.نامه  # If you use Farsi in filenames and it generates temp files
+
+# Operating System specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# IDE specific files (optional, add what you use)
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Environment variables file
+.env
+.env.local
+.env.*.local
+
+# Other temporary files
+temp/
+tmp/

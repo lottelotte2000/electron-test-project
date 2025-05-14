@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Electron AutoUpdate Example</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; text-align: center; }
+        #appVersion { font-size: 1.2em; margin-bottom: 20px; }
+        #updateMessage { margin-top: 20px; padding: 10px; background-color: #f0f0f0; border-radius: 5px; min-height: 30px;}
+        button { padding: 10px 20px; font-size: 1em; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Electron Auto-Update Test</h1>
+    <div id="appVersion">App Version: <span id="version">Loading...</span></div>
+    <button id="checkUpdateBtn">Check for Updates Manually</button>
+    <div id="updateMessage">Status messages will appear here.</div>
+
+    <script src="./renderer.js"></script>
+</body>
+</html>

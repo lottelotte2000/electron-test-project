@@ -1,0 +1,47 @@
+{
+  "name": "electron-autoupdate-example",
+  "version": "1.0.0",  
+  "main": "main.js",   
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder",
+    "publish": "electron-builder --publish always"
+  },
+  "keywords": [],
+  "author": "Your Name",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron": "^36.2.0",
+    "electron-builder": "^26.0.12",
+    "electron-log": "^5.4.0",
+    "electron-updater": "^6.6.2"
+  },
+   "build": {
+    "appId": "com.example.electronautoupdate", 
+    "productName": "Electron AutoUpdate Test", 
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "lottelotte2000",  
+        "repo": "electron-test-project"    
+      }
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico" 
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "build/icon.icns" 
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "build/icon.png"  
+    },
+    "directories": {
+      "buildResources": "build", 
+      "output": "dist"
+    }
+  }
+}
